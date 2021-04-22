@@ -41,21 +41,33 @@
                                         <rect key="frame" x="34" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="- 5"/>
+                                        <connections>
+                                            <action selector="minusFiveP1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BzL-Fl-8ar"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yv-4Y-IuA">
                                         <rect key="frame" x="79" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusOneP1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NYE-tZ-iLt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLH-qB-xXb">
                                         <rect key="frame" x="129" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusOneP1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0t-0N-tQX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnS-g0-cwr">
                                         <rect key="frame" x="179" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+ 5"/>
+                                        <connections>
+                                            <action selector="plusFiveP1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4q-1U-eOR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -102,21 +114,33 @@
                                         <rect key="frame" x="34" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="- 5"/>
+                                        <connections>
+                                            <action selector="minusFiveP2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRQ-gx-rxl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAX-DG-F6J">
                                         <rect key="frame" x="79" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusOneP2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODg-5f-mPi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHA-gX-QLw">
                                         <rect key="frame" x="129" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusOneP2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pj1-gg-dBA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG8-im-8cK">
                                         <rect key="frame" x="179" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+ 5"/>
+                                        <connections>
+                                            <action selector="plusFiveP2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xee-jn-0ON"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -163,21 +187,33 @@
                                         <rect key="frame" x="34" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="- 5"/>
+                                        <connections>
+                                            <action selector="minusFiveP3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXE-to-l1R"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAe-3T-jxM">
                                         <rect key="frame" x="79" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusOneP3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRn-QW-MoR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDR-yn-6mR">
                                         <rect key="frame" x="129" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusOneP3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BZ-yN-TiY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygy-Yb-Gkr">
                                         <rect key="frame" x="179" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+ 5"/>
+                                        <connections>
+                                            <action selector="plusFiveP3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8P-UR-YuP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -224,21 +260,33 @@
                                         <rect key="frame" x="34" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="- 5"/>
+                                        <connections>
+                                            <action selector="minusFiveP4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLF-Cb-cW6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqy-GD-Bti">
                                         <rect key="frame" x="79" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusOneP4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zq-EK-EEo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjF-MG-IKm">
                                         <rect key="frame" x="129" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusOneP4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCj-nK-PgP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-ea-u0g">
                                         <rect key="frame" x="179" y="74" width="30" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="+ 5"/>
+                                        <connections>
+                                            <action selector="plusFiveP4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zO-AF-TKC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -266,8 +314,8 @@
                                     <constraint firstItem="vQv-ea-u0g" firstAttribute="top" secondItem="XTd-LM-xZg" secondAttribute="top" constant="74" id="xTv-fG-8BV"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X Loses!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JK-Ie-bhB">
-                                <rect key="frame" x="125" y="812" width="164" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player __ Loses!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JK-Ie-bhB">
+                                <rect key="frame" x="119.5" y="812" width="175" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -298,6 +346,13 @@
                             <constraint firstItem="AZ2-Cs-zus" firstAttribute="top" secondItem="Lbb-Hb-g0R" secondAttribute="bottom" constant="30" id="xMw-lW-a2M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="p1Life" destination="MhG-9H-78A" id="MGn-XI-gY3"/>
+                        <outlet property="p2Life" destination="gfW-jO-W0A" id="dgt-qK-5cF"/>
+                        <outlet property="p3Life" destination="lAZ-6a-sgY" id="Z9T-eX-kqp"/>
+                        <outlet property="p4Life" destination="4U0-Eq-Bzw" id="ohx-Vk-d93"/>
+                        <outlet property="playerLose" destination="8JK-Ie-bhB" id="p20-T0-nAC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
