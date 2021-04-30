@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oKc-7V-jZO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Life Counter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-Qx-NeR" userLabel="Player View">
+                                <rect key="frame" x="20" y="155" width="374" height="707"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-wr-iza">
+                                <rect key="frame" x="160" y="113" width="94" height="34"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="8" maxX="10" maxY="8"/>
+                                <state key="normal" title="Add player"/>
+                                <connections>
+                                    <action selector="addPlayers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Jn-Xt-fo4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zD4-Qx-NeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Ke-iR-eyy"/>
+                            <constraint firstItem="zD4-Qx-NeR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HV4-Ul-nu5"/>
+                            <constraint firstItem="zD4-Qx-NeR" firstAttribute="top" secondItem="Xdd-wr-iza" secondAttribute="bottom" constant="8" symbolic="YES" id="Ij0-PL-Ze6"/>
+                            <constraint firstItem="Xdd-wr-iza" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="XbK-pT-I1f"/>
+                            <constraint firstItem="Xdd-wr-iza" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="cbm-Fe-Oed"/>
+                            <constraint firstItem="Xdd-wr-iza" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-160" id="n5m-HA-mKb"/>
+                            <constraint firstItem="zD4-Qx-NeR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="x7g-Pj-Pfg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Life Counter" id="PNU-nL-29X">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="SYk-8K-oC0">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="iJb-yY-zxd">
+                                <rect key="frame" x="344" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="History"/>
+                                <connections>
+                                    <segue destination="f3g-lp-Rmu" kind="show" id="48s-dd-Agi"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addPlayerButton" destination="Xdd-wr-iza" id="4LK-iD-Na3"/>
+                        <outlet property="players" destination="zD4-Qx-NeR" id="gm0-Za-eqY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114.4927536231885" y="77.678571428571431"/>
+        </scene>
+        <!--History View-->
+        <scene sceneID="Hhh-oA-rgs">
+            <objects>
+                <viewController storyboardIdentifier="HistoryView" title="History View" id="f3g-lp-Rmu" customClass="HistoryView" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lIp-rL-341">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wp0-cz-c79">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XUC-i3-dD4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XUC-i3-dD4" firstAttribute="trailing" secondItem="Wp0-cz-c79" secondAttribute="trailing" id="XmR-bT-eIm"/>
+                            <constraint firstItem="Wp0-cz-c79" firstAttribute="leading" secondItem="XUC-i3-dD4" secondAttribute="leading" id="bLJ-14-Iob"/>
+                            <constraint firstItem="Wp0-cz-c79" firstAttribute="top" secondItem="XUC-i3-dD4" secondAttribute="top" id="jdh-jn-6v6"/>
+                            <constraint firstItem="XUC-i3-dD4" firstAttribute="bottom" secondItem="Wp0-cz-c79" secondAttribute="bottom" id="sfF-19-hlZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" id="Xon-K6-IFW"/>
+                    <connections>
+                        <outlet property="historyTableView" destination="Wp0-cz-c79" id="IqJ-fC-RhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwz-Rs-7YT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943.4782608695655" y="78.348214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lSP-t5-QPK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oKc-7V-jZO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b8O-t8-IwT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EzJ-rj-ebp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PN4-TN-eJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
