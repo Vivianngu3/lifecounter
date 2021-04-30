@@ -20,24 +20,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-Qx-NeR" userLabel="Player View">
                                 <rect key="frame" x="20" y="155" width="374" height="707"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-wr-iza">
-                                <rect key="frame" x="160" y="113" width="94" height="34"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="8" maxX="10" maxY="8"/>
-                                <state key="normal" title="Add player"/>
-                                <connections>
-                                    <action selector="addPlayers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Jn-Xt-fo4"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="z1N-t4-hi5">
+                                <rect key="frame" x="118" y="113" width="178" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-wr-iza">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="8" maxX="10" maxY="8"/>
+                                        <state key="normal" title="+ player"/>
+                                        <connections>
+                                            <action selector="addPlayers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Jn-Xt-fo4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coJ-6r-5Wc">
+                                        <rect key="frame" x="103" y="0.0" width="75" height="34"/>
+                                        <state key="normal" title="- player"/>
+                                        <connections>
+                                            <action selector="minusPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wp5-k8-5z8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zD4-Qx-NeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Ke-iR-eyy"/>
                             <constraint firstItem="zD4-Qx-NeR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HV4-Ul-nu5"/>
-                            <constraint firstItem="zD4-Qx-NeR" firstAttribute="top" secondItem="Xdd-wr-iza" secondAttribute="bottom" constant="8" symbolic="YES" id="Ij0-PL-Ze6"/>
-                            <constraint firstItem="Xdd-wr-iza" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="XbK-pT-I1f"/>
-                            <constraint firstItem="Xdd-wr-iza" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="cbm-Fe-Oed"/>
-                            <constraint firstItem="Xdd-wr-iza" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-160" id="n5m-HA-mKb"/>
+                            <constraint firstItem="zD4-Qx-NeR" firstAttribute="top" secondItem="z1N-t4-hi5" secondAttribute="bottom" constant="8" symbolic="YES" id="Mkk-hR-pe3"/>
+                            <constraint firstItem="z1N-t4-hi5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="hHO-kc-hGy"/>
+                            <constraint firstItem="z1N-t4-hi5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvA-9t-83G"/>
                             <constraint firstItem="zD4-Qx-NeR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="x7g-Pj-Pfg"/>
                         </constraints>
                     </view>
@@ -56,6 +67,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addPlayerButton" destination="Xdd-wr-iza" id="4LK-iD-Na3"/>
+                        <outlet property="minusPlayerButton" destination="coJ-6r-5Wc" id="2WE-1q-Yzw"/>
                         <outlet property="players" destination="zD4-Qx-NeR" id="gm0-Za-eqY"/>
                     </connections>
                 </viewController>
