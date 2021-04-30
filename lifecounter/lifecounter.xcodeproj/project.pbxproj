@@ -15,7 +15,6 @@
 		753588DE2630FB6B002D42EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753588DC2630FB6B002D42EB /* LaunchScreen.storyboard */; };
 		753588E92630FB6C002D42EB /* lifecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753588E82630FB6C002D42EB /* lifecounterTests.swift */; };
 		753588F42630FB6C002D42EB /* lifecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753588F32630FB6C002D42EB /* lifecounterUITests.swift */; };
-		758AC9C3263A1862007E4CAB /* PlayerPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 758AC9C1263A1862007E4CAB /* PlayerPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		753588EF2630FB6C002D42EB /* lifecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753588F32630FB6C002D42EB /* lifecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITests.swift; sourceTree = "<group>"; };
 		753588F52630FB6C002D42EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		758AC9C1263A1862007E4CAB /* PlayerPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerPanel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				753588DA2630FB6B002D42EB /* Assets.xcassets */,
 				753588DC2630FB6B002D42EB /* LaunchScreen.storyboard */,
 				753588DF2630FB6B002D42EB /* Info.plist */,
-				758AC9C1263A1862007E4CAB /* PlayerPanel.xib */,
 			);
 			path = lifecounter;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 				753588DE2630FB6B002D42EB /* LaunchScreen.storyboard in Resources */,
 				753588DB2630FB6B002D42EB /* Assets.xcassets in Resources */,
 				753588D92630FB5C002D42EB /* Main.storyboard in Resources */,
-				758AC9C3263A1862007E4CAB /* PlayerPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

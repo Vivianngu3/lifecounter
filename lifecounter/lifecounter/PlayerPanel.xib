@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-hu-HLV">
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-hu-HLV">
                     <rect key="frame" x="46" y="74" width="323" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1X-de-z5a">
@@ -26,7 +26,7 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0r-Mx-7hu">
                             <rect key="frame" x="86" y="0.0" width="30" height="30"/>
-                            <state key="normal" title="-X"/>
+                            <state key="normal" title="-5"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncS-aC-RJ5">
                             <rect key="frame" x="155" y="0.0" width="30" height="30"/>
@@ -38,7 +38,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSp-hL-7qd">
                             <rect key="frame" x="293" y="0.0" width="30" height="30"/>
-                            <state key="normal" title="+X"/>
+                            <state key="normal" title="+5"/>
                         </button>
                     </subviews>
                 </stackView>
@@ -47,8 +47,6 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="c1D-hu-HLV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="6r5-Wn-vY1"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="c1D-hu-HLV" secondAttribute="leading" constant="-46" id="D4d-VW-lS7"/>
-                <constraint firstItem="c1D-hu-HLV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-45" id="tQ6-gd-9IY"/>
             </constraints>
             <point key="canvasLocation" x="-42.028985507246382" y="-35.491071428571423"/>
         </view>
