@@ -9,11 +9,7 @@ import UIKit
  
 var history: [String] = []
 
-protocol gameSettings {
-    func startingGame()
-}
-
-class ViewController: UIViewController, gameSettings {
+class ViewController: UIViewController {
     
    
     @IBOutlet weak var players: UIStackView!
@@ -27,15 +23,23 @@ class ViewController: UIViewController, gameSettings {
         while count < 4 {
             count += 1
             let player = PlayerView()
+            player.gameSettings = self
             player.data = ("Player \(count)", 20)
             player.tag = count
             players.addArrangedSubview(player)
         }
     }
     
+    public func startingGame() {
+            addPlayerButton.isEnabled = false
+            minusPlayerButton.isEnabled = false
+            
+        }
+    
     @IBAction func addPlayers(_ sender: Any) {
         count += 1
         let player = PlayerView()
+        player.gameSettings = self
         player.data = ("Player \(count)", 20)
         players.addArrangedSubview(player)
         
@@ -58,15 +62,12 @@ class ViewController: UIViewController, gameSettings {
         }
     }
     
-    func startingGame() {
-        addPlayerButton.isEnabled = false
-        minusPlayerButton.isEnabled = false
-        
-    }
+    
 }
 
 class PlayerView: UIView {
-    var delegate: gameSettings?
+    
+    
     
     var data : (String, Int) = ("", -1) {
         didSet {
@@ -80,7 +81,7 @@ class PlayerView: UIView {
     weak var minus1button : UIButton!
     weak var plus1button : UIButton!
     weak var plus5button : UIButton!
-    
+    var gameSettings : ViewController? = nil
     
     
     override init(frame: CGRect) {
@@ -118,35 +119,39 @@ class PlayerView: UIView {
     }
     
     @objc private func minus5(_ sender : UIButton) {
-        delegate?.startingGame()
+       
         data = (data.0, data.1 - 5 )
         label.text = "\(data.0) : \(data.1)"
-        history.append("Player \(data.0) lost 5 lives")
+        gameSettings?.startingGame()
+        history.append("\(data.0) lost 5 lives")
         
     }
     
     
     @objc private func minus1(_ sender : UIButton) {
-        delegate?.startingGame()
+        
         data = (data.0, data.1 - 1)
         label.text = "\(data.0) : \(data.1)"
-        history.append("Player \(data.0) lost 1 life")
+        gameSettings?.startingGame()
+        history.append("\(data.0) lost 1 life")
         
     }
     
     @objc private func plus1(_ sender : UIButton) {
-        delegate?.startingGame()
+        
         data = (data.0, data.1 + 1 )
         label.text = "\(data.0) : \(data.1)"
-        history.append("Player \(data.0) gained 1 life")
+        gameSettings?.startingGame()
+        history.append("\(data.0) gained 1 life")
         
     }
     
     @objc private func plus5(_ sender : UIButton) {
-        delegate?.startingGame()
+        
         data = (data.0, data.1 + 5 )
         label.text = "\(data.0) : \(data.1)"
-        history.append("Player \(data.0) gained 5 lives")
+        gameSettings?.startingGame()
+        history.append("\(data.0) gained 5 lives")
     }
 }
 
